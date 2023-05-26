@@ -1,0 +1,135 @@
+*::after,*::before
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Nunito Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+.container{
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+header{
+    width: 100%;
+    position:fixed;
+    top: 0;
+    background-color: #ffff
+
+}
+.nav{
+    display: flex;
+    height: 100px;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav__list{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    column-gap: 85px;
+    list-style-type:none ;
+}
+.inner-list{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    column-gap: 50px;
+    list-style-type: none;
+}
+
+.inner-list.link{
+    color:#212121;
+    text-decoration: none;
+
+}
+
+.nav__btn{
+    width: 125px;
+    height: 50px;
+    color:#2d76f9;
+    border:blue solid 2px;
+    border-radius:50px;
+    background-color: transparent;
+}
+
+
+/* header end */
+
+/* main start */
+main{
+    width: 100%;
+ 
+}
+#intro{
+   
+    min-height:877px;
+}
+#intro .wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.left{
+    max-width: 533px;
+}
+.left .title{
+    font-size: 65px;
+    line-height: 85px;
+    font-weight: 600;
+}
+.left .text{
+    font-size: 19px;
+    line-height: 36px;
+    color:#747474
+}
+.left .btn{
+    color:#ffff;
+    width: 250px;
+    height: 75px;
+    border-radius: 50px;
+    background-color:#2d76f9;
+    font-weight: 500;
+    margin-top: 50px;
+  
+}
+
+.right{
+    background-color: #D6E5FD;
+    height: 877px;
+    border-radius:0 0 100px;
+    display:flex;
+    align-items: center;
+
+}
+
+.right ::after{
+    content:"";
+    width: 220px;
+    height: 290px;
+    position:relative;
+    background-image: url('../assets/icons/Ellipse.svg');
+    background-repeat: no-repeat;
+    bottom:0; 
+    right: 0;
+    z-index: 1;
+
+}
+.right ::before{
+    content:"";
+    width: 220px;
+    height: 290px;
+    position:relative;
+    background-image: url('./assets/icons/images/Ellipse.svg');
+    background-repeat: no-repeat;
+    top:0;
+    left: 0;
+    z-index: 1;
+    transform:rotate(-180deg) ;
+}
